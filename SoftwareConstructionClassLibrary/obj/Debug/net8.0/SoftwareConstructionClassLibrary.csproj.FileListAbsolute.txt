@@ -1,0 +1,11 @@
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\bin\Debug\net8.0\SoftwareConstructionClassLibrary.deps.json
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\bin\Debug\net8.0\SoftwareConstructionClassLibrary.dll
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\bin\Debug\net8.0\SoftwareConstructionClassLibrary.pdb
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.AssemblyInfoInputs.cache
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.AssemblyInfo.cs
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.dll
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\refint\SoftwareConstructionClassLibrary.dll
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\SoftwareConstructionClassLibrary.pdb
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstructionClassLibrary\obj\Debug\net8.0\ref\SoftwareConstructionClassLibrary.dll
