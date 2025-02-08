@@ -30,7 +30,22 @@
 
         }
 
+
+        public int GetArrayElementValue(int index)
+        {
+
+            return _arrayNumbers[index];
+
+        }
+
+
+        public void SetArrayElementValue(int index, int value)
+        {
+            _arrayNumbers[index] = value;
+
+        }
           
+
 
 
 
