@@ -1,4 +1,6 @@
-﻿namespace SoftwareConstructionClassLibrary
+﻿using System;
+
+namespace SoftwareConstructionClassLibrary
 {
 
     /// <summary>
@@ -53,11 +55,11 @@
 
             foreach (var item in _arrayNumbers)
             {
-                if(item > value )
+                if (item > value)
                 {
                     value = item;
                 }
-                
+
             }
             return value;
 
@@ -135,9 +137,32 @@
 
             return result;
 
-           
+
+        }
+
+
+
+
+
+        public void ScalarMultiply(int scalar)
+        {
+            for (int i = 0; i < _arrayNumbers.Length; i++)
+            {
+                _arrayNumbers[i] *= scalar;
+            }
+
+        }
+
+        public void AddConstant(int value) 
+            {
+                for (int i = 0; i < _arrayNumbers.Length; i++)
+                {
+                    _arrayNumbers[i] += value;
+                }
+
             }
 
 
     }
+
 }

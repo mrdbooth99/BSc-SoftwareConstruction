@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,7 +60,16 @@ namespace SoftwareConstructionUI
                     break;
                 case "Method to return string representation of the array":
                     txtResult.Text += $"{numbers.ToString()}";
-                    break;                    
+                    break;
+                case "Mutator Method 1 - Scalar Multiply":
+                    numbers.ScalarMultiply((int)nudFirstNumber.Value);
+                    txtResult.Text += "Method complete";
+                    break;
+                case "Mutator Method 2 - Add constant":
+                    numbers.AddConstant((int)nudFirstNumber.Value);
+                    txtResult.Text += "Method complete";
+                    break;
+                    
                 default:
                     break;
             }
@@ -112,6 +122,14 @@ namespace SoftwareConstructionUI
                     case 5:
                     case 6:
                         txtResult.Text += "◼ STEP 1 - Click on Run Method";
+                        break;
+                    case 7:
+                        txtResult.Text += "◼ STEP 1 - Use Input 1 to specify scalar value\r\n◼ STEP 2 - Click on Run Method";
+                        nudFirstNumber.Enabled = true;
+                        break;
+                    case 8:
+                        txtResult.Text += "◼ STEP 1 - Use Input 1 to specify value\r\n◼ STEP 2 - Click on Run Method";
+                        nudFirstNumber.Enabled = true;
                         break;
 
 
