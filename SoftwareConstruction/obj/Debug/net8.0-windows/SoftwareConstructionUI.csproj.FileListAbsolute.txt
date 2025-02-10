@@ -19,3 +19,4 @@ C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstruction\obj\Debu
 C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstruction\obj\Debug\net8.0-windows\SoftwareConstructionUI.genruntimeconfig.cache
 C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstruction\obj\Debug\net8.0-windows\ref\SoftwareConstructionUI.dll
 C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstruction\obj\Debug\net8.0-windows\SoftwareConstructionUI.Week2UI.resources
+C:\Users\rdboo\Desktop\C#\BSc SoftwareConstruction\SoftwareConstruction\obj\Debug\net8.0-windows\SoftwareConstructionUI.sourcelink.json

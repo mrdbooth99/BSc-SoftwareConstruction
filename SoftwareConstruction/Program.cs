@@ -10,7 +10,7 @@ namespace SoftwareConstructionUI
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            Application.Run(new Week2UI());
+            Application.Run(new Week3UI());
         }
     }
 }
