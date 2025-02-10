@@ -95,7 +95,7 @@
             cboMethod.Enabled = false;
             cboMethod.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cboMethod.FormattingEnabled = true;
-            cboMethod.Items.AddRange(new object[] { "Method to return max number", "Method to test equality", "Method to calculate and return GCD", "Method to return number of elements", "Method to sum all elements in the array", "Method to return array average", "Method to return string representation of the array", "Mutator Method 1 - Scalar Multiply", "Mutator Method 2 - Add constant" });
+            cboMethod.Items.AddRange(new object[] { "Method to return max number", "Method to test equality", "Method to calculate and return GCD", "Method to return number of elements", "Method to sum all elements in the array", "Method to return array average", "Method to return string representation of the array", "Mutator Method 1 - Scalar Multiply", "Mutator Method 2 - Add constant", "Accessor Method 1 - Return element value at index", "Accessor Method 2 - Set element value at index" });
             cboMethod.Location = new Point(12, 62);
             cboMethod.Margin = new Padding(4, 3, 4, 3);
             cboMethod.Name = "cboMethod";

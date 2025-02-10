@@ -9,6 +9,7 @@ namespace SoftwareConstructionClassLibrary
     public class ArrayOfNumbers
     {
 
+        // Private instance field for encapsulation
         private int[] _arrayNumbers;
 
 
@@ -33,6 +34,7 @@ namespace SoftwareConstructionClassLibrary
         }
 
 
+        // Accessor method (GET)
         public int GetArrayElementValue(int index)
         {
 
@@ -41,12 +43,17 @@ namespace SoftwareConstructionClassLibrary
         }
 
 
+        // Accessor method (SET)
         public void SetArrayElementValue(int index, int value)
         {
             _arrayNumbers[index] = value;
 
         }
 
+        /// <summary>
+        /// Method to return the max value in the array
+        /// </summary>
+        /// <returns>Max value</returns>
         public int GetMaxValue()
         {
             int value = 0;
@@ -66,6 +73,10 @@ namespace SoftwareConstructionClassLibrary
         }
 
 
+        /// <summary>
+        /// Method to determine if the array indices are equal
+        /// </summary>
+        /// <returns>true or false</returns>
         public bool DetermineEquality(int a, int b)
         {
             return _arrayNumbers[a] == _arrayNumbers[b];
@@ -101,12 +112,21 @@ namespace SoftwareConstructionClassLibrary
         }
 
 
+        /// <summary>
+        /// Method to return array length
+        /// </summary>
+        /// <returns>Length of the array</returns>
         public int CountElements()
         {
             return _arrayNumbers.Length;
         }
 
 
+
+        /// <summary>
+        /// Method to sum all elements in the array
+        /// </summary>
+        /// <returns>Sum of all the elements</returns>
         public int SumElements()
         {
             return _arrayNumbers.Sum();
@@ -143,7 +163,10 @@ namespace SoftwareConstructionClassLibrary
 
 
 
-
+        /// <summary>
+        /// Method to multiply array elements
+        /// </summary>
+        /// <param name="scalar">Scalar value</param>
         public void ScalarMultiply(int scalar)
         {
             for (int i = 0; i < _arrayNumbers.Length; i++)
@@ -153,6 +176,10 @@ namespace SoftwareConstructionClassLibrary
 
         }
 
+        /// <summary>
+        /// Method to add constant to array elements
+        /// </summary>
+        /// <param name="value">Constant value</param>
         public void AddConstant(int value) 
             {
                 for (int i = 0; i < _arrayNumbers.Length; i++)

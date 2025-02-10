@@ -29,7 +29,7 @@ namespace SoftwareConstructionUI
 
 
         /// <summary>
-        /// Executes a TwoNumbers class method based on the provided method name and updates the user interface with the result
+        /// Executes a ArrayOfNumbers class method based on the provided method name and updates the user interface with the result
         /// </summary>
         /// <param name="method">The name of the method to be executed.</param>
         private void RunMethod(string method)
@@ -69,7 +69,13 @@ namespace SoftwareConstructionUI
                     numbers.AddConstant((int)nudFirstNumber.Value);
                     txtResult.Text += "Method complete";
                     break;
-                    
+                case "Accessor Method 1 - Return element value at index":
+                    txtResult.Text += $"◼ Array value at index {(int)nudFirstNumber.Value} = {numbers.GetArrayElementValue((int)nudFirstNumber.Value)}";
+                    break;
+                case "Accessor Method 2 - Set element value at index":
+                    numbers.SetArrayElementValue((int)nudFirstNumber.Value, (int)nudSecondNumber.Value);
+                    txtResult.Text += "Element value set";
+                    break;
                 default:
                     break;
             }
@@ -78,6 +84,11 @@ namespace SoftwareConstructionUI
         }
 
 
+        /// <summary>
+        /// Renders user instructions in the Terminal window.
+        /// </summary>
+        /// <param name="type">The type of operation constructor or method</param>
+        /// <param name="index">The index method in the cbo input</param>
         private void renderInstructions(string type, int index)
         {
 
@@ -131,6 +142,20 @@ namespace SoftwareConstructionUI
                         txtResult.Text += "◼ STEP 1 - Use Input 1 to specify value\r\n◼ STEP 2 - Click on Run Method";
                         nudFirstNumber.Enabled = true;
                         break;
+                    case 9:
+                        nudFirstNumber.Maximum = numbers.CountElements() - 1;
+                        txtResult.Text += "◼ STEP 1 - Use Input 1 to specify index number\r\n◼ STEP 2 - Click on Run Method";
+                        nudFirstNumber.Enabled = true;
+                        break;
+                    case 10:
+                        nudFirstNumber.Maximum = numbers.CountElements() - 1;
+                        nudSecondNumber.Maximum = 1000000;
+                        txtResult.Text += "◼ STEP 1 - Use Input 1 to specify index number , Input 2 to specify new value\r\n◼ STEP 2 - Click on Run Method";
+                        nudFirstNumber.Enabled = true;
+                        nudSecondNumber.Enabled = true;
+                        break;
+
+
 
 
                 }
@@ -144,6 +169,11 @@ namespace SoftwareConstructionUI
 
 
 
+        /// <summary>
+        /// Handler for constructor combo box change
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cboConstructor_SelectedIndexChanged(object sender, EventArgs e)
         {
             nudFirstNumber.Enabled = false;
@@ -166,6 +196,11 @@ namespace SoftwareConstructionUI
 
         }
 
+        /// <summary>
+        /// Handler for Call constructor button click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnConstructor_Click(object sender, EventArgs e)
         {
             txtResult.ForeColor = Color.LimeGreen;
@@ -208,6 +243,11 @@ namespace SoftwareConstructionUI
 
         }
 
+        /// <summary>
+        /// Handler for method combo box change
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cboMethod_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnCallMethod.Enabled = true;
@@ -215,6 +255,11 @@ namespace SoftwareConstructionUI
             renderInstructions("method", cboMethod.SelectedIndex);
         }
 
+        /// <summary>
+        /// Handler for Call method button click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCallMethod_Click(object sender, EventArgs e)
         {
     
